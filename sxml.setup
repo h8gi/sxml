@@ -1,0 +1,10 @@
+;; sxml.setup
+
+;;; コンパイル  => postscheme.so
+(compile -s -O3 -d1 "sxml.scm" -j sxml)
+(compile -s -O3 -d0 "sxml.import.scm")
+;;; インストール
+(install-extension
+ 'sxml
+ '("sxml.so" "sxml.import.so")
+ '((version 1.0)))

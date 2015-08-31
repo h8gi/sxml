@@ -1,0 +1,6 @@
+;;; sxml.meta
+
+((author "yagi hiroki")
+ (synopsis "sxml->xml")
+ (license "GPLv3")
+ (files "main.scm" "sxml.sxm" "sxml.setup" "sxml.meta"))
